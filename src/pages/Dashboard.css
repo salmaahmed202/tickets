@@ -1,0 +1,65 @@
+.dashboard {
+    flex: 1;
+    padding: 30px;
+    overflow-y: auto;
+    background-color: #f9fafb;
+  }
+  
+  .dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+  }
+  
+  .dashboard-title h1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 5px;
+  }
+  
+  .dashboard-title p {
+    color: #6b7280;
+    font-size: 14px;
+  }
+  
+  .add-member-btn {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .add-member-btn:hover {
+    background-color: #2563eb;
+  }
+  
+  .dashboard-content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  .charts-section {
+    display: flex;
+    gap: 25px;
+  }
+  
+  .app {
+    display: flex;
+    height: 100vh;
+    background-color: #f5f5f5;
+  }
+  
+  .main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }

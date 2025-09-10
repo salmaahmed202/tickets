@@ -1,0 +1,37 @@
+.team-tabs {
+    display: flex;
+    gap: 2px;
+    margin-bottom: 20px;
+  }
+  
+  .tab {
+    background-color: #f3f4f6;
+    border: none;
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #6b7280;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-radius: 8px;
+  }
+  
+  .tab:first-child {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+  
+  .tab:last-child {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  
+  .tab.active {
+    background-color: #14b8a6;
+    color: white;
+  }
+  
+  .tab:hover:not(.active) {
+    background-color: #e5e7eb;
+  }
+  

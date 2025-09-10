@@ -1,0 +1,78 @@
+{
+    "organizations": [
+      { "id": 1, "name": "CRP", "type": "organization" }
+    ],
+    "users": [
+      {
+        "id": 1,
+        "name": "CRP Executive",
+        "email": "executive@crp.com",
+        "avatar": "https://dummyimage.com/40x40/3b82f6/ffffff?text=CE",
+        "role": "Executive"
+      },
+      {
+        "id": 2,
+        "name": "CRP Addresses",
+        "email": "addresses@crp.com",
+        "avatar": "https://dummyimage.com/40x40/10b981/ffffff?text=CA",
+        "role": "Address Manager"
+      },
+      {
+        "id": 3,
+        "name": "Robert Anderson",
+        "email": "robert.anderson@crp.com",
+        "avatar": "https://dummyimage.com/40x40/f59e0b/ffffff?text=RA",
+        "role": "Senior Product Advisor"
+      }
+    ],
+    "models": [
+      {
+        "id": 1,
+        "name": "INCIDENT Addresses",
+        "description": "Address management incidents and their resolution",
+        "category": "Address Management"
+      },
+      {
+        "id": 2,
+        "name": "INCIDENT Addresses",
+        "description": "Secondary address management for complex cases",
+        "category": "Address Management"
+      },
+      {
+        "id": 3,
+        "name": "INCIDENT Addresses",
+        "description": "Tertiary address management for escalated issues",
+        "category": "Address Management"
+      },
+      {
+        "id": 4,
+        "name": "INCIDENT Addresses",
+        "description": "Quaternary address management for critical cases",
+        "category": "Address Management"
+      },
+      {
+        "id": 5,
+        "name": "INCIDENT Addresses",
+        "description": "Quinary address management for specialized scenarios",
+        "category": "Address Management"
+      }
+    ],
+    "priorities": [
+      { "id": 1, "name": "Low", "color": "green" },
+      { "id": 2, "name": "Medium", "color": "yellow" },
+      { "id": 3, "name": "High", "color": "orange" },
+      { "id": 4, "name": "Critical", "color": "red" }
+    ],
+    "categories": [
+      { "id": 1, "name": "Technical Issue" },
+      { "id": 2, "name": "User Request" },
+      { "id": 3, "name": "System Maintenance" },
+      { "id": 4, "name": "Bug Report" }
+    ],
+    "applications": [
+      { "id": 1, "name": "Web Portal" },
+      { "id": 2, "name": "Mobile App" },
+      { "id": 3, "name": "Desktop Client" },
+      { "id": 4, "name": "API Service" }
+    ]
+  }

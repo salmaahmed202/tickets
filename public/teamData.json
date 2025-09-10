@@ -1,0 +1,39 @@
+[
+    {
+      "id": 1,
+      "name": "Rasha",
+      "level": 2,
+      "team": "AS400",
+      "type": "Team leader",
+      "numTickets": 150,
+      "totalSLA": 1440,
+      "delayedSLA": 250,
+      "dateTime": "11/12/2022",
+      "selected": true
+    },
+    {
+      "id": 2,
+      "name": "Rasha",
+      "level": 2,
+      "team": "AS400",
+      "type": "Team leader",
+      "numTickets": 150,
+      "totalSLA": 1440,
+      "delayedSLA": 250,
+      "dateTime": "11/12/2022",
+      "selected": false
+    },
+    {
+      "id": 3,
+      "name": "Rasha",
+      "level": 2,
+      "team": "AS400",
+      "type": "Team leader",
+      "numTickets": 150,
+      "totalSLA": 1440,
+      "delayedSLA": 250,
+      "dateTime": "11/12/2022",
+      "selected": false
+    }
+  ]
+  

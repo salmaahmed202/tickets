@@ -1,0 +1,15 @@
+{
+    "stats": {
+      "delayedSLA": 10,
+      "email": 1,
+      "incident": 1,
+      "transfer": 0,
+      "request": 0
+    },
+    "totalTickets": 800,
+    "chartData": [
+      { "name": "Waiting", "value": 100, "color": "#e5e7eb" },
+      { "name": "In Progress", "value": 100, "color": "#8b5cf6" },
+      { "name": "Completed", "value": 600, "color": "#14b8a6" }
+    ]
+  }

@@ -1,0 +1,13 @@
+.chart-container {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-height: 400px;
+  }
+  
+  .chart-wrapper {
+    height: 350px;
+    width: 100%;
+  }
