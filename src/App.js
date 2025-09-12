@@ -15,6 +15,10 @@ import KnowledgeBase from './pages/KnowledgeBase'
 import Tasks from './pages/Tasks'
 import Communication from './pages/Communication'
 import Reports from './pages/Reports'
+import MailPage from "./pages/mailPage";
+import NewMail from "./pages/newMail";
+import MailDetials from "./pages/mailDetials";
+
 function App() {
   return (
     <Router>
@@ -34,6 +38,10 @@ function App() {
         <Route path="/tasks" element={<Tasks />} />
         <Route path="/communication" element={<Communication />} />
         <Route path="/reports" element={<Reports />} />
+        <Route path="mail" element= {<MailPage/>}/> 
+        <Route path="newmail" element= {<NewMail/>}/>
+        <Route path="maildetials/:id" element= {<MailDetials/>}/>
+        
       </Routes>
     </Layout>
     </Router>
