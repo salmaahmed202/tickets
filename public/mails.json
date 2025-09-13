@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Rasha",
+    "subject": "The end of the year is upon us. As you relax and reflect on the past year, take a moment to catch up on",
+    "date": "2022-12-11 12:24 AM",
+    "image": "/image/user.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Rasha",
+    "subject": "Another email for testing filter function",
+    "date": "2023-03-01 09:15 AM",
+    "image": "/image/user.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Rasha",
+    "subject": "Final test mail for filtering",
+    "date": "2023-08-20 05:40 PM",
+    "image": "/image/user.jpg"
+  }
+]

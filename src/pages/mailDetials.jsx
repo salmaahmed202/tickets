@@ -4,6 +4,7 @@ import RightArrow from "../assets/Vector.svg";
 import LeftArrow from "../assets/Left.svg";
 import TrashIcon from "../assets/Trash.svg";
 import UploadIcon from "../assets/upload.svg";
+import { Avatar } from "@mui/material"; 
 
 export default function MailDetials() {
   const { id } = useParams();
@@ -49,7 +50,7 @@ export default function MailDetials() {
           }}
         >
           <Typography variant="subtitle2" sx={{ color: "gray", fontSize: { xs: "0.8rem", sm: "0.9rem" } }}>
-            {mail.name} &lt;RASDFDI.ai&gt;
+         {mail.image} {mail.name} &lt;RASDFDI.ai&gt;
           </Typography>
 
           <Box sx={{ display: "flex", alignItems: "center", gap: 1, mt: { xs: 1, sm: 0 } }}>

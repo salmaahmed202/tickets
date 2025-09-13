@@ -10,38 +10,22 @@ import {
   Checkbox,
   TextField,
 } from "@mui/material";
-import { useState } from "react";
-
-const mails = [
-  {
-    id: 1,
-    name: "Rasha",
-    subject:
-      "The end of the year is upon us. As you relax and reflect on the past year, take a moment to catch up on",
-    date: "2022-12-11 12:24 AM",
-  },
-  {
-    id: 2,
-    name: "Rasha",
-    subject:
-      "Another email for testing filter function",
-    date: "2023-03-01 09:15 AM",
-  },
-  {
-    id: 3,
-    name: "Rasha",
-    subject:
-      "Final test mail for filtering",
-    date: "2023-08-20 05:40 PM",
-  },
-];
+import { useEffect, useState } from "react";
+import { Avatar } from "@mui/material"; 
 
 export default function MailPage() {
   const navigate = useNavigate();
   const [selected, setSelected] = useState([]);
   const [fromDate, setFromDate] = useState("2022-01-01");
   const [toDate, setToDate] = useState("2023-12-31");
+  const [ mails ,setMails] = useState([]);
 
+useEffect(() => {
+  fetch("/mails.json")
+    .then((res) => res.json())
+    .then((data) => setMails(data))
+    .catch((error) => console.error("error loading mails:", error));
+}, [])
   const handleCheckboxChange = (id) => {
     setSelected((prev) =>
       prev.includes(id) ? prev.filter((x) => x !== id) : [...prev, id]
@@ -192,7 +176,7 @@ export default function MailPage() {
                   <TableCell sx={{ color: "#6E6B7B" }}>
                     {mail.subject}
                   </TableCell>
-                  <TableCell sx={{ color: "#6E6B7B", whiteSpace: "pre-line" }}>
+                  <TableCell sx={{ color: "#6E6B7B", fontSize:"10px", whiteSpace: "pre-line" }}>
                     {mail.date.split(" ")[0]} <br />
                     {mail.date.split(" ").slice(1).join(" ")}
                   </TableCell>
