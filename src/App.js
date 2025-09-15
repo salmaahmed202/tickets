@@ -16,37 +16,78 @@ import Communication from './pages/Communication';
 import Reports from './pages/Reports';
 import Login from './pages/Login';
 
-
-const isAuthenticated = true; 
+// Simple authentication state (replace with real auth logic)
+const isAuthenticated = true; // Set to true for testing
 
 function App() {
   return (
     <Router>
       <Routes>
+        {/* Login Route - Outside Layout */}
         <Route 
           path="/login" 
           element={<Login />} 
         />
+
+        {/* Protected Routes - Each wrapped individually with Layout */}
         <Route 
           path="/" 
-          element={isAuthenticated ? <Layout /> : <Navigate to="/login" />}
-        >
-          <Route index element={<Dashboard />} />
-          <Route path="dashboard" element={<Dashboard />} />
-          <Route path="tickets" element={<Tickets />} />
-          <Route path="add-ticket-form" element={<AddTicketForm />} />
-          <Route path="Add-member" element={<AddMember />} />
-          <Route path="teamsDashboard" element={<TeamsDashboard />} />
-          <Route path="productPage" element={<ProductPage />} />
-          <Route path="infrastructure" element={<Infrastructure />} />
-          <Route path="safe" element={<Safe />} />
-          <Route path="documents" element={<Documents />} />
-          <Route path="knowledge-bases" element={<KnowledgeBase />} />
-          <Route path="tasks" element={<Tasks />} />
-          <Route path="communication" element={<Communication />} />
-          <Route path="reports" element={<Reports />} />
-        </Route>
+          element={isAuthenticated ? <Navigate to="/dashboard" /> : <Navigate to="/login" />}
+        />
+        <Route 
+          path="/dashboard" 
+          element={isAuthenticated ? <Layout><Dashboard /></Layout> : <Navigate to="/login" />}
+        />
+        <Route 
+          path="/tickets" 
+          element={isAuthenticated ? <Layout><Tickets /></Layout> : <Navigate to="/login" />}
+        />
+        <Route 
+          path="/add-ticket-form" 
+          element={isAuthenticated ? <Layout><AddTicketForm /></Layout> : <Navigate to="/login" />}
+        />
+        <Route 
+          path="/Add-member" 
+          element={isAuthenticated ? <Layout><AddMember /></Layout> : <Navigate to="/login" />}
+        />
+        <Route 
+          path="/teamsDashboard" 
+          element={isAuthenticated ? <Layout><TeamsDashboard /></Layout> : <Navigate to="/login" />}
+        />
+        <Route 
+          path="/productPage" 
+          element={isAuthenticated ? <Layout><ProductPage /></Layout> : <Navigate to="/login" />}
+        />
+        <Route 
+          path="/infrastructure" 
+          element={isAuthenticated ? <Layout><Infrastructure /></Layout> : <Navigate to="/login" />}
+        />
+        <Route 
+          path="/safe" 
+          element={isAuthenticated ? <Layout><Safe /></Layout> : <Navigate to="/login" />}
+        />
+        <Route 
+          path="/documents" 
+          element={isAuthenticated ? <Layout><Documents /></Layout> : <Navigate to="/login" />}
+        />
+        <Route 
+          path="/knowledge-bases" 
+          element={isAuthenticated ? <Layout><KnowledgeBase /></Layout> : <Navigate to="/login" />}
+        />
+        <Route 
+          path="/tasks" 
+          element={isAuthenticated ? <Layout><Tasks /></Layout> : <Navigate to="/login" />}
+        />
+        <Route 
+          path="/communication" 
+          element={isAuthenticated ? <Layout><Communication /></Layout> : <Navigate to="/login" />}
+        />
+        <Route 
+          path="/reports" 
+          element={isAuthenticated ? <Layout><Reports /></Layout> : <Navigate to="/login" />}
+        />
 
+        {/* Redirect to login for any unmatched paths */}
         <Route 
           path="*" 
           element={<Navigate to="/login" />} 
