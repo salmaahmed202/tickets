@@ -1,7 +1,6 @@
-
 import './App.css';
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import TeamsDashboard from '../src/pages/TeamsDashboard';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AddMember from "../src/pages/AddMember";
 import Layout from '../src/pages/Layout';
 import ProductPage from '../src/pages/ProductPage';
@@ -18,12 +17,13 @@ import Reports from './pages/Reports'
 import MailPage from "./pages/mailPage";
 import NewMail from "./pages/newMail";
 import MailDetials from "./pages/mailDetials";
+import Login from './pages/Login';
 
 function App() {
   return (
     <Router>
-      <Layout>
       <Routes>
+        
         <Route path="/" element={<Dashboard />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/tickets" element={<Tickets />} />
@@ -41,11 +41,14 @@ function App() {
         <Route path="mail" element= {<MailPage/>}/> 
         <Route path="newmail" element= {<NewMail/>}/>
         <Route path="maildetials/:id" element= {<MailDetials/>}/>
-        
+         <Route 
+          path="/login" 
+          element={<Login />} 
+        />
+
       </Routes>
-    </Layout>
     </Router>
-  )
+  );
 }
 
 export default App;

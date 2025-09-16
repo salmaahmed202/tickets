@@ -1,0 +1,63 @@
+.communication-page {
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.communication-page h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.communication-page p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.filter-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.filter-section span {
+  color: #666;
+}
+
+.filter-section button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.filter-section button:hover {
+  background-color: #0056b3;
+}
+
+.communication-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.communication-table th,
+.communication-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.communication-table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+}
+
+.communication-table tr:hover {
+  background-color: #f1f1f1;
+}
